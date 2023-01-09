@@ -148,6 +148,9 @@ padding-right: 2em;
 
  <?php
 	if (isset($_POST["firma"])) {
+		$_SESSION['firma'] = $_POST["firma"];
+		echo "<div><p><a href='http://localhost/zad/kontakty.php' target='_blank'>Dane kontaktowe</a></p></div>";
+		echo $_POST["firma"];
 		echo "<table>
 	<tr style='font-weight:bold;'>
 		<td>Data</td>
@@ -201,7 +204,7 @@ padding-right: 2em;
 		echo "</td>";
 	echo "<tr>";	
 	echo "</table>";
-
+	}
 ?>
 
 <?php		

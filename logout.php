@@ -2,6 +2,7 @@
   session_start();
   if(isset($_SESSION['zalogowany'])){
     unset($_SESSION['zalogowany']);
+	echo $_SESSION['firma'];
   }
   else{
     header("Location: index.php");
